@@ -14,14 +14,53 @@
     <header></header>
     <!-- MAIN -->
     <main>
+      <div class="alert alert-danger mb-0 rounded-0 border-0 py-2 text-center" role="alert" style="background-color: #E60023; color: white;">
+        <div class="container-fluid fs-6">
+            <strong>¡PROMO MAYO!</strong> 50% OFF tus primeros 12 meses con el código: <strong>GOL2026</strong>
+            <a href="pages/404.html" class="text-white ms-3 fw-bold text-decoration-underline">¡Aprovechar ahora!</a>
+        </div>
+    </div>
       <section id="hero">
-          <div class="card text-bg-dark">
-            <img src="./assets/WastedInicial.png" class="card-img" alt="...">
-            <div class="card-img-overlay">
-              <h5 class="card-title">Wasted</h5>
-              <p class="card-text">En este primer episodio veremos la búsqueda de Jake por obtener un empleo nuevo.</p>
-              <p class="card-text"><small>Duracion: 30 mins</small></p>
+          <div id="principal-carousel" class="carousel slide" data-bs-ride="carousel"data-bs-interval="4000">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#principal-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#principal-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#principal-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <a href="pages/detalle.html" class="text-decoration-none">
+                  <img src="./assets/WastedInicial.png" class="d-block w-100" alt="Serie Wasted">
+                  <div class="carousel-caption fs-6">
+                    <h5>Wasted</h5>
+                  </div>
+                </a>
+              </div>
+              <div class="carousel-item">
+                <a href="pages/detalle.html" class="text-decoration-none">
+                  <img src="./assets/AlejoYValentina.png" class="d-block w-100" alt="Serie Alejo y Valentina">
+                  <div class="carousel-caption fs-6">
+                    <h5>Alejo y Valentina</h5>
+                  </div>
+                </a>  
+              </div>
+              <div class="carousel-item">
+                <a href="pages/detalle.html" class="text-decoration-none">
+                  <img src="./assets/TresAcordes.png" class="d-block w-100" alt="Serie Tres Acordes">
+                  <div class="carousel-caption fs-6">
+                    <h5>Tres Acordes</h5>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#principal-carousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#principal-carousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
       </section>
       
