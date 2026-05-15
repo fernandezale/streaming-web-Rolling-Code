@@ -8,10 +8,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/global.css">
     <!-- Coloquen debajo links a estilos-->
-
+ <link rel="stylesheet" href="/css/fr-login.css">
 
 </head>
-
 <body>
 
     <!-- HEADER -->
@@ -66,10 +65,84 @@
             -Link a registro
         -->
 
-
-        <!-- Register -->
         <!-- Facu -->
-
+        <!-- Login modal-->
+<button 
+type="button" 
+class="btn btn-primary fr-modal-boton-abrir" 
+data-bs-toggle="modal" 
+data-bs-target="#exampleModal">Iniciar sesión
+</button>
+<div 
+class="modal fade" 
+id="exampleModal" 
+tabindex="-1" 
+aria-labelledby="exampleModalLabel" 
+aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content fr-modal-contenedor">
+<div class="modal-header fr-modal-encabezado">
+<h1 
+class="modal-title fs-5 fr-modal-titulo" 
+id="exampleModalLabel">Inicio de sesión
+</h1>
+<button 
+type="button" 
+class="btn-close fr-modal-cerrar" 
+data-bs-dismiss="modal" 
+aria-label="Close">
+</button>
+</div>
+<div class="modal-body">
+<form>
+<div class="mb-3">
+<label 
+for="exampleInputEmail1" 
+class="form-label fr-modal-etiqueta">Correo electrónico
+</label>
+<input 
+type="email" 
+class="form-control fr-modal-campo" 
+id="exampleInputEmail1"
+required>
+</div>
+<div class="mb-3">
+<label 
+for="exampleInputPassword1" 
+class="form-label fr-modal-etiqueta">Contraseña
+</label>
+<input 
+type="password" 
+class="form-control fr-modal-campo" 
+id="exampleInputPassword1"
+required>
+</div>
+<div class="mb-3 form-check">
+<input 
+type="checkbox" 
+class="form-check-input fr-modal-casilla" 
+id="exampleCheck1">
+<label 
+class="form-check-label fr-modal-casilla-texto" 
+for="exampleCheck1">Mantener sesión iniciada
+</label>
+</div>
+</div>
+<div class="modal-footer fr-modal-pie">
+<button 
+type="submit" 
+class="btn btn-primary fr-modal-boton-principal">Iniciar
+</button>
+<button 
+type="button" 
+class="btn btn-secondary fr-modal-boton-secundario" 
+data-bs-dismiss="modal">Cancelar
+</button>
+</form>
+</div>
+</div>
+</div>
+</div>
         <!--Pagina aparte:
             -Username
             -Email
