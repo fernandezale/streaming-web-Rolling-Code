@@ -6,10 +6,19 @@
             --white-orange:#F5A68E;
             --strong-black: #000000;
 }
+.mi-nav{
+  background-color: var(--strong-black) !important;
+  color: var(--white-orange) !important;
+}
+
+.logo{
+  height: 60px;
+  width: 150px;
+}
 
 .btn-buscar{
-    color: #c83400;
-  border-color: #c83400;
+    color: var(--strong-orange);
+  border-color:var(--strong-orange);
   background-color: transparent;
   font-weight: 500;
   transition: all 0.25s ease-in-out;
