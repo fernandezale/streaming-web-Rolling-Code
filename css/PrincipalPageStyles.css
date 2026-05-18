@@ -1,0 +1,19 @@
+@import "global.css";
+
+:root{
+    --dark--gray: #0b0e11;
+}
+.principal-card {
+    background-color: var(--dark--gray) ;
+    border: 2px solid var(--strong-orange) ;
+    border-radius: 8px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    color: var(--medium-orange);
+    .card-title{
+        color: var(--medium-orange);
+    }
+}
+.principal-categorias-card{
+    background-color: var(--dark--gray) ;
+    color: var(--white-orange);
+}

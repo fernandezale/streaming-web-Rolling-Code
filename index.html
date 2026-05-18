@@ -8,11 +8,12 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/global.css">
     <!-- Coloquen debajo links a estilos-->
+    <link rel="stylesheet" href="css/PrincipalPageStyles.css">
 
 
 </head>
 
-<body>
+<body style="background-color: var(--dark--gray);">
 
     <!-- HEADER -->
     <header>
@@ -106,36 +107,84 @@
           </div>
       </section>
       <!-- SECCION CATEGORIAS -->
-      <div class="row row-cols-3 row-cols-md-6 g-1 my-1">
-          <div class="col">
-            <div class="card">
-              <a href="pages/detalle.html" class="text-decoration-none">
-                <div class="card-body">
-                  <h6 class="card-title text-center">COMEDIA</h6>
-                </div>
-              </a>
+      <section id="categorias">
+        <div class="row justify-content-center g-3 my-1">
+          <div class="col-6 col-md-4">
+            <div class="card principal-categorias-card">
+              <h6 class="card-title text-center m-0 fs-4">CATEGORIAS</h6>
             </div>
           </div>
-          <div class="col">
-            <div class="card">
-              <a href="pages/detalle.html" class="text-decoration-none">
-                <div class="card-body">
-                  <h6 class="card-title text-center">ACCIÓN</h6>
-                </div>
-              </a>
+        </div>
+        <div class="row row-cols-3 row-cols-md-3 g-1 my-1">
+            <div class="col">
+              <div class="card principal-card">
+                <a href="pages/detalle.html" class="text-decoration-none">
+                  <div class="card-body">
+                    <h6 class="card-title text-center">COMEDIA</h6>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card principal-card">
+                <a href="pages/detalle.html" class="text-decoration-none">
+                  <div class="card-body">
+                    <h6 class="card-title text-center">ACCIÓN</h6>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card principal-card">
+                <a href="pages/detalle.html" class="text-decoration-none">
+                  <div class="card-body">
+                    <h6 class="card-title text-center">DRAMA</h6>
+                  </div>
+                </a>
+              </div>
+            </div>
+          
+        </div>
+      </section>
+<!-- PELICULAS TOP 10 -->
+      <section id="top-peliculas" class="my-5">
+        <div class="row justify-content-center g-3 my-1">
+          <div class="col-6 col-md-4">
+            <div class="card principal-categorias-card">
+              <h6 class="card-title text-center m-0 fs-4">CATEGORIAS</h6>
             </div>
           </div>
-          <div class="col">
-            <div class="card">
-              <a href="pages/detalle.html" class="text-decoration-none">
-                <div class="card-body">
-                  <h6 class="card-title text-center">DRAMA</h6>
-                </div>
-              </a>
+        </div>
+        <div class="row row-cols-3 row-cols-md-3 g-1 my-1">
+            <div class="col">
+              <div class="card principal-card">
+                <a href="pages/detalle.html" class="text-decoration-none">
+                  <div class="card-body">
+                    <h6 class="card-title text-center">COMEDIA</h6>
+                  </div>
+                </a>
+              </div>
             </div>
-          </div>
-        
-      </div>
+            <div class="col">
+              <div class="card principal-card">
+                <a href="pages/detalle.html" class="text-decoration-none">
+                  <div class="card-body">
+                    <h6 class="card-title text-center">ACCIÓN</h6>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card principal-card">
+                <a href="pages/detalle.html" class="text-decoration-none">
+                  <div class="card-body">
+                    <h6 class="card-title text-center">DRAMA</h6>
+                  </div>
+                </a>
+              </div>
+            </div>
+        </div>
+      </section>
 
 
         <!--login -->
