@@ -9,8 +9,7 @@
     <link rel="stylesheet" href="css/global.css">
     <!-- Coloquen debajo links a estilos-->
     <link rel="stylesheet" href="css/PrincipalPageStyles.css">
-
-
+    <link rel="stylesheet" href="/css/fr-login.css">
 </head>
 
 <body style="background-color: var(--dark--gray);">
@@ -28,6 +27,55 @@
           -Perfil del usuario
           -Boton login
         -->
+          <nav class="navbar navbar-dark navbar-expand-lg mi-nav">
+        <div class="container-fluid d-flex justify-content-between align-items-center">
+          <a class="navbar-brand" href="#"><img class="logo" src="/assets/logo.png" alt=""></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
+              <li class="nav-item mx-2">
+                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link active" aria-current="page" href="#">Login</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link active" aria-current="page" href="#">Contacto</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link active" aria-current="page" href="#">Sobre nosotros</a>
+              </li>
+              
+            <form class="d-flex me-3" role="search">
+              <input
+                class="form-control me-2 input-buscar"
+                type="search"
+                placeholder="Buscar"
+                aria-label="Search"
+              />
+              <button class="btn btn-buscar" type="submit">
+                Buscar
+              </button>
+            </form>
+            <li class="nav-item dropdown">
+              <a href="#" class="p-0">
+                <img src="/assets/foto-usuario.png" class="rounded-circle border border-2 object-fit-cover" alt="Perfil" style="width: 40px; height: 40px;">
+              </a>
+            </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
 
     </header>
 
@@ -197,17 +245,91 @@
             -Link a registro
         -->
 
-
-        <!-- Register -->
         <!-- Facu -->
-
-        <!--Pagina aparte:
+        <!-- Login modal-->
+<button 
+type="button" 
+class="btn btn-primary fr-modal-boton-abrir" 
+data-bs-toggle="modal" 
+data-bs-target="#exampleModal">Iniciar sesión
+</button>
+<div 
+class="modal fade" 
+id="exampleModal" 
+tabindex="-1" 
+aria-labelledby="exampleModalLabel" 
+aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content fr-modal-contenedor">
+<div class="modal-header fr-modal-encabezado">
+<h1 
+class="modal-title fs-5 fr-modal-titulo" 
+id="exampleModalLabel">Inicio de sesión
+</h1>
+<button 
+type="button" 
+class="btn-close fr-modal-cerrar" 
+data-bs-dismiss="modal" 
+aria-label="Close">
+</button>
+</div>
+<div class="modal-body">
+<form>
+<div class="mb-3">
+<label 
+for="exampleInputEmail1" 
+class="form-label fr-modal-etiqueta">Correo electrónico
+</label>
+<input 
+type="email" 
+class="form-control fr-modal-campo" 
+id="exampleInputEmail1"
+required>
+</div>
+<div class="mb-3">
+<label 
+for="exampleInputPassword1" 
+class="form-label fr-modal-etiqueta">Contraseña
+</label>
+<input 
+type="password" 
+class="form-control fr-modal-campo" 
+id="exampleInputPassword1"
+required>
+</div>
+<div class="mb-3 form-check">
+<input 
+type="checkbox" 
+class="form-check-input fr-modal-casilla" 
+id="exampleCheck1">
+<label 
+class="form-check-label fr-modal-casilla-texto" 
+for="exampleCheck1">Mantener sesión iniciada
+</label>
+</div>
+</div>
+<div class="modal-footer fr-modal-pie">
+<button 
+type="submit" 
+class="btn btn-primary fr-modal-boton-principal">Iniciar
+</button>
+<button 
+type="button" 
+class="btn btn-secondary fr-modal-boton-secundario" 
+data-bs-dismiss="modal">Cancelar
+</button>
+</form>
+</div>
+</div>
+</div>
+</div>
+        <!--Pagina aparte register:
             -Username
             -Email
             -Contraseña
             -Confirmar contraseña
             -Botón registrarse
-        -->
+        Facu-->
 
         <!-- Boton sub y donaciones -->
         <!-- Grupo -->
