@@ -1,0 +1,138 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;}
+    .share-tech-mono-regular {
+  font-family: "Share Tech Mono", monospace;
+  font-weight: 400;
+  font-style: normal;}
+
+ 
+.conte_principal{ 
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border: black solid 2px;
+    background-image: url(/assets/nexora_black.png);
+    background-size: cover;
+    /* opacity: rgba(0,0,0,0.4); */
+    width: 100%;
+    z-index: 0;
+    position: relative;
+}
+.conte_principal::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.04);
+
+}
+#A{
+    display: grid;
+    grid-template-columns: 1fr ;
+    border: 1px solid rgba(255, 255, 255, 0.02);
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 2;
+}
+.dates{
+    border: 1px solid  rgba(255, 255, 255, 0.02);
+    border-radius: 12px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.001);
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    width: 100%;
+    }
+    .iconos-redes {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+    .dates p {text-align: center; color: rgb(253, 253, 253); }
+    .dates a{text-decoration: none;}
+label{ color: aliceblue;}
+i{
+    padding: 10px;
+    font-size: 40px;
+    color: blue;
+}
+.instagram {
+  font-size:40px;
+  background: linear-gradient(
+  45deg,
+  rgba(131,58,180,1),
+  rgba(225,48,108,1),
+  rgba(252,175,69,1)
+  );
+
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+.consulta{
+margin: 30px;
+}
+.consulta p{
+    font-family: "Share Tech Mono", monospace;
+    font-size: 20px;
+}
+
+/* /////////////////////////// FORM /////////////////////////////*/
+#B{
+    display: grid;
+    grid-template-columns: 1fr;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+
+}
+    .formulario{
+        background: rgba(255, 255, 255, 0.001);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 12px;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+    }
+input, textarea{
+    display: flex;
+    padding: 15px;
+    width: 100%;
+    border-radius: 7px;
+    text-align: center;
+    font-size: 15px;
+    opacity: 0.4;
+}
+textarea{
+    width: 100%;
+    border: black solid 2px;
+    font-size: 17px;
+    padding-top: 20px;
+    text-align: center ;
+    }
+    #name, #email{
+        font-size: 17px;
+    }
+    
+    .btn{
+        padding: 15px;
+        width: 100%;
+        border: 1px solid ;
+        border-radius: 7px;
+        background: rgba(238, 137, 5, 0.918);
+        
+
+    }
+
