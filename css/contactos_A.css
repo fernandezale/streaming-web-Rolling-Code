@@ -5,16 +5,18 @@
     .share-tech-mono-regular {
   font-family: "Share Tech Mono", monospace;
   font-weight: 400;
-  font-style: normal;}
-
+  font-style: normal;
+  font-family: 'Poppins', sans-serif;}
+body{
+    font-family: 'Poppins', sans-serif;
+}
  
 .conte_principal{ 
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    border: black solid 2px;
+    border: solid 2px;
     background-image: url(/assets/nexora_black.png);
     background-size: cover;
-    /* opacity: rgba(0,0,0,0.4); */
     width: 100%;
     z-index: 0;
     position: relative;
@@ -26,24 +28,24 @@
     z-index: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0,0,0,0.04);
+    background: rgba(0,0,0,.5);
 
 }
 #A{
     display: grid;
     grid-template-columns: 1fr ;
-    border: 1px solid rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0);
     width: 100%;
     height: 100%;
     position: relative;
     z-index: 2;
 }
 .dates{
-    border: 1px solid  rgba(255, 255, 255, 0.02);
+    border: 1px solid  rgba(255, 255, 255, 0);
     border-radius: 12px;
     padding: 20px;
     background-color: rgba(255, 255, 255, 0.001);
-    margin: 5px;
+    margin: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -55,13 +57,17 @@
     justify-content: space-between;
     gap: 10px;
 }
-    .dates p {text-align: center; color: rgb(253, 253, 253); }
+.iconos-redes a:hover{
+    transform: scale(1.5);
+    transition-timing-function: ease-out;
+}
+    .dates p {text-align: center; color: rgb(253, 253, 253); text-decoration: none; }
     .dates a{text-decoration: none;}
 label{ color: aliceblue;}
 i{
     padding: 10px;
     font-size: 40px;
-    color: blue;
+    color: rgb(51, 38, 238);
 }
 .instagram {
   font-size:40px;
@@ -79,7 +85,7 @@ i{
 margin: 30px;
 }
 .consulta p{
-    font-family: "Share Tech Mono", monospace;
+    font-family: 'Poppins', sans-serif;
     font-size: 20px;
 }
 
@@ -87,7 +93,8 @@ margin: 30px;
 #B{
     display: grid;
     grid-template-columns: 1fr;
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0);
+    margin: 15px;
     width: 100%;
     height: 100%;
     position: relative;
@@ -96,7 +103,7 @@ margin: 30px;
 }
     .formulario{
         background: rgba(255, 255, 255, 0.001);
-        border: 1px solid rgba(255, 255, 255, 0.2);
+        border: 1px solid rgba(255, 255, 255, 0);
         border-radius: 12px;
         padding: 20px;
         display: flex;
@@ -113,17 +120,19 @@ input, textarea{
     border-radius: 7px;
     text-align: center;
     font-size: 15px;
-    opacity: 0.4;
+    opacity: 0.3;
+
 }
 textarea{
     width: 100%;
+    color: black;
     border: black solid 2px;
     font-size: 17px;
     padding-top: 20px;
     text-align: center ;
     }
-    #name, #email{
-        font-size: 17px;
+    input::placeholder{
+        color: rgb(2, 2, 2); 
     }
     
     .btn{
@@ -132,7 +141,12 @@ textarea{
         border: 1px solid ;
         border-radius: 7px;
         background: rgba(238, 137, 5, 0.918);
-        
-
+        cursor: pointer;
+        font-size: 20px;
+        display: block;
+    }
+    .btn:hover{
+        transform: scalex(1.1);
+        transition: 2s;
     }
 
