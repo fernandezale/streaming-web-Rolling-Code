@@ -1,0 +1,34 @@
+@import "global.css";
+
+:root{
+    --dark--gray: #0b0e11;
+}
+.principal-card {
+    background-color: var(--dark--gray) ;
+    border: 2px solid var(--strong-orange) ;
+    border-radius: 8px;
+    height: 100px;
+    transition: transform 0.2s ease;
+    color: var(--medium-orange);
+    .card-body{
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+    .card-title{
+        color: white;
+        margin: 0;
+    }
+    a{
+        height: 100%;
+    }
+}
+.principal-card:hover {
+    transform: translateY(-4px);
+}
+.principal-categorias-card{
+    background-color: var(--dark--gray) ;
+    color: white;
+}
