@@ -32,3 +32,10 @@
     background-color: var(--dark--gray) ;
     color: white;
 }
+.principal-top10-card {
+    width: 150px;
+    background-color: var(--dark--gray);
+    border: 3px solid var(--strong-orange);
+    border-radius: 8px;
+}
+
