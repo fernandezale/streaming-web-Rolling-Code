@@ -32,31 +32,10 @@
     background-color: var(--dark--gray) ;
     color: white;
 }
-.principal-top10-card{
-    width: 200px;
-    height: 100%;
-    margin: 0 auto;
-    background-color: var(--dark--gray) ;
-    border: 3px solid var(--strong-orange) ;
+.principal-top10-card {
+    width: 150px;
+    background-color: var(--dark--gray);
+    border: 3px solid var(--strong-orange);
     border-radius: 8px;
-    background-color: var(--dark--gray) ;
-    color: white;
-}
-.img-pelicula {
-    
-    object-fit: cover;
 }
 
-@media (max-width: 570px) {
-    .principal-top10-card {
-        width: 100%;
-        max-width: 160px;
-        height: auto;
-    }
-    
-    .img-pelicula {
-        width: 100%;
-        height: 200px;
-        object-fit: cover;
-    }
-}
