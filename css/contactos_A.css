@@ -18,6 +18,7 @@ body{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     border: solid 2px;
+    border-radius: 7px;
     background-image: url(/assets/nexora_black.png);
     background-size: cover;
     width: 100%;
