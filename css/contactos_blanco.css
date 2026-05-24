@@ -1,19 +1,15 @@
-*{
+ *{
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;}
-
-.share-tech-mono-regular {
+    .share-tech-mono-regular {
   font-family: "Share Tech Mono", monospace;
   font-weight: 400;
   font-style: normal;
   font-family: 'Poppins', sans-serif;}
 body{
-    font-family: 'Poppins', sans-serif;
-    overflow-x:hidden;
-   background: #0a0a0a;
-   color:white;
-
+   background:#f5f5f5;
+   color:#111;
 }
 .consulta h4{
    font-size: 3rem;
@@ -24,11 +20,10 @@ body{
 .conte_principal{ 
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    border: solid 2px;
+    border: solid black 2px;
     border-radius: 7px;
-    background-image: url(/assets/nexora_black.png);
+    background-image: url(/assets/Nexora_whitee.png);
     background-size: cover;
-    width: 100%;
     z-index: 0;
     position: relative;
 }
@@ -37,9 +32,8 @@ body{
     position: absolute;
     inset: 0;
     z-index: 0;
-    
     height: 100%;
-    background: rgba(0,0,0,.5);
+    background: rgba(0,0,0,.2);
 
 }
 #A{
@@ -64,19 +58,19 @@ body{
     .iconos-redes {
     display: flex;
     justify-content: space-between;
-    gap: 20px;
+    gap: 10px;
 }
 .iconos-redes a:hover{
     transform: scale(1.5);
     transition-timing-function: ease-out;
 }
-    .dates p {text-align: center; color: rgb(253, 253, 253); text-decoration: none; }
+    .dates p {text-align: center; color: rgb(0, 0, 0); text-decoration: none; font-size: 16px; }
     .dates a{text-decoration: none;}
-label{ color: aliceblue;}
+label{ color: rgb(0, 0, 0);}
 i{
     padding: 10px;
     font-size: 40px;
-    color: rgb(51, 38, 238);
+    color: rgb(35, 20, 245);
 }
 .instagram {
   font-size:40px;
@@ -114,9 +108,8 @@ margin: 30px;
         border-radius: 12px;
         padding: 20px;
         display: flex;
-        justify-content:left;
-        width: 100%;
-        align-items:start;
+        justify-content: left;
+        align-items:flex-start;
         flex-direction: column;
         gap: 10px;
     }
@@ -125,13 +118,14 @@ input, textarea{
     padding: 15px;
     width: 100%;
     border-radius: 7px;
-    text-align:left;
+    text-align: left;
     font-size: 15px;
     opacity: 0.3;
+    box-shadow: 0 4px 12px rgba(0,0,0,1);
 
 }
 textarea{
-    width: 100%;
+    
     color: black;
     border: black solid 2px;
     font-size: 17px;
@@ -153,8 +147,8 @@ textarea{
         display: block;
     }
     .btn:hover{
-        transform: scalex(1.1);
-        transition: 2s;
+        transform: scalex(1.04);
+        transition: linear;
     }
 /* /////////////// MEDIA QUIERIS //////////////////// */
 @media (min-width: 375px){
