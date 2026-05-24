@@ -3,28 +3,17 @@
 :root{
     --dark--gray: #0b0e11;
 }
-.principal-card {
-    background-color: var(--dark--gray) ;
-    border: 2px solid var(--strong-orange) ;
-    border-radius: 8px;
-    height: 100px;
-    transition: transform 0.2s ease;
-    color: var(--medium-orange);
-    .card-body{
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 0;
-    }
-    .card-title{
-        color: white;
-        margin: 0;
-    }
-    a{
-        height: 100%;
-    }
+.banner-promo{
+    background-color: var(--strong-orange);
+    color: white;
 }
+.principal-card {
+    width: 150px;
+    background-color: var(--dark--gray);
+    border: 3px solid var(--strong-orange);
+    border-radius: 8px;
+}
+
 .principal-card:hover {
     transform: translateY(-4px);
 }
@@ -32,3 +21,10 @@
     background-color: var(--dark--gray) ;
     color: white;
 }
+.principal-top10-card {
+    width: 150px;
+    background-color: var(--dark--gray);
+    border: 3px solid var(--strong-orange);
+    border-radius: 8px;
+}
+
