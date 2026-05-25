@@ -48,5 +48,11 @@ transform:scale(1.06);
 
 }
 .fr-img6{
+    Filter: 
 
+    hue-rotate(90deg) 
+    brightness(150%) 
+    contrast(100%) 
+    blur(0.1px);
+    border: 2px solid greenyellow;
 }
