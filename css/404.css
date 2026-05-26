@@ -5,12 +5,11 @@ box-sizing:border-box;
 }
 
 body{
-height:100vh;
-overflow:hidden;
-display:grid;
-place-content:center;
+
 background:#000;
 }
+
+
 .fr-grid{
 width:100%;
 max-width:850px;
