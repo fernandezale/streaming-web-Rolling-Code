@@ -1,0 +1,169 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;}
+
+.share-tech-mono-regular {
+  font-family: "Share Tech Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+  font-family: 'Poppins', sans-serif;}
+body{
+    font-family: 'Poppins', sans-serif;
+    overflow-x:hidden;
+   background: #0a0a0a;
+   color:white;
+
+}
+.consulta h4{
+   font-size: 3rem;
+   color: rgba(238, 137, 5, 0.918);
+   margin-bottom: 10px;
+}
+ 
+.conte_principal{ 
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border: solid 2px;
+    border-radius: 7px;
+    background-image: url(/assets/nexora_black.png);
+    background-size: cover;
+    width: 100%;
+    z-index: 0;
+    position: relative;
+}
+.conte_principal::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    
+    height: 100%;
+    background: rgba(0,0,0,.5);
+
+}
+#A{
+    display: grid;
+    grid-template-columns: 1fr ;
+    border: 1px solid rgba(255, 255, 255, 0);
+    height: 100%;
+    position: relative;
+    z-index: 2;
+}
+.dates{
+    border: 1px solid  rgba(255, 255, 255, 0);
+    border-radius: 12px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.001);
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    }
+    .iconos-redes {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.iconos-redes a:hover{
+    transform: scale(1.5);
+    transition-timing-function: ease-out;
+}
+    .dates p {text-align: center; color: rgb(253, 253, 253); text-decoration: none; }
+    .dates a{text-decoration: none;}
+label{ color: aliceblue;}
+i{
+    padding: 10px;
+    font-size: 40px;
+    color: rgb(51, 38, 238);
+}
+.instagram {
+  font-size:40px;
+  background: linear-gradient(
+  45deg,
+  rgba(131,58,180,1),
+  rgba(225,48,108,1),
+  rgba(252,175,69,1)
+  );
+
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+.consulta{
+margin: 30px;
+}
+.consulta p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+}
+
+/* /////////////////////////// FORM /////////////////////////////*/
+#B{
+    display: grid;
+    grid-template-columns: 1fr;
+    border: 1px solid rgba(255, 255, 255, 0);
+    margin: 15px;
+    position: relative;
+    z-index: 1;
+
+}
+    .formulario{
+        background: rgba(255, 255, 255, 0.001);
+        border: 1px solid rgba(255, 255, 255, 0);
+        border-radius: 12px;
+        padding: 20px;
+        display: flex;
+        justify-content:left;
+        width: 100%;
+        align-items:start;
+        flex-direction: column;
+        gap: 10px;
+    }
+input, textarea{
+    display: flex;
+    padding: 15px;
+    width: 100%;
+    border-radius: 7px;
+    text-align:left;
+    font-size: 15px;
+    opacity: 0.3;
+
+}
+textarea{
+    width: 100%;
+    color: black;
+    border: black solid 2px;
+    font-size: 17px;
+    padding-top: 20px;
+    text-align: left ;
+    }
+    input::placeholder{
+        color: rgb(2, 2, 2); 
+    }
+    
+    .btn{
+        padding: 15px;
+        width: 100%;
+        border: 1px solid ;
+        border-radius: 7px;
+        background: rgba(238, 137, 5, 0.918);
+        cursor: pointer;
+        font-size: 20px;
+        display: block;
+    }
+    .btn:hover{
+        transform: scalex(1.1);
+        transition: 2s;
+    }
+/* /////////////// MEDIA QUIERIS //////////////////// */
+@media (min-width: 375px){
+    .conte_principal{
+        display: grid;
+        grid-template-columns: 2fr;
+    }
+    .formulario{
+        display: flex; 
+    }
+}
+

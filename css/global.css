@@ -1,0 +1,38 @@
+:root {
+            /* Orange Palette */
+            --strong-orange: #c83400;
+            --medium-orange: #bc5028;
+            --light-orange: #BC3810;
+            --white-orange:#F5A68E;
+            --strong-black: #000000;
+}
+.mi-nav{
+  background-color: var(--strong-black) !important;
+  color: var(--white-orange) !important;
+}
+
+.logo{
+  height: 60px;
+  width: 150px;
+}
+
+.btn-buscar{
+    color: var(--strong-orange);
+  border-color:var(--strong-orange);
+  background-color: transparent;
+  font-weight: 500;
+  transition: all 0.25s ease-in-out;
+}
+
+.input-buscar{
+    border-color: #dee2e6;
+  transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+.input-buscar:hover {
+  border-color: rgba(200, 52, 0, 0.5);
+}
+.input-buscar:focus {
+  border-color: #c83400 !important;
+  box-shadow: 0 0 0 0.25rem rgba(200, 52, 0, 0.25) !important;
+  outline: 0;
+}

@@ -1,21 +1,536 @@
-
 <!doctype html>
-<html lang="en">
-  <head>
+<html lang="es">
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Nombre de la pagina -->
     <title>Streaming Web</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <!-- ESTILOS GLOBALES -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/global.css">
-  </head>
-  <body>
+    <!-- Coloquen debajo links a estilos-->
+    <link rel="stylesheet" href="css/PrincipalPageStyles.css">
+    <link rel="stylesheet" href="/css/fr-login.css">
+    <link rel="stylesheet" href="/css/FooterStyles.css">
+</head>
+
+<body style="background-color: var(--dark--gray);">
+
     <!-- HEADER -->
-    <header></header>
-    <!-- MAIN -->
-    <main></main>
-    <!-- FOOTER -->
-    <footer></footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <header>
+
+        <!-- Navbar -->
+        <!-- Agustin -->
+
+        <!-- Aca va:
+          -Logo
+          -Barra de búsqueda
+          -Menú hamburguesa
+          -Perfil del usuario
+          -Boton login
+        -->
+          <nav class="navbar navbar-dark navbar-expand-lg mi-nav">
+            <div class="container-fluid d-flex justify-content-between align-items-center">
+
+          <button
+            class="navbar-toggler order-1"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <a class="navbar-brand order-2 mx-auto" href="#"><img class="logo" src="/assets/logo.png" alt=""></a>
+
+            <div class="nav-item dropdown order-3 ms-lg-4">
+              <a class="nav-link dropdown-toggle p-0" href="#" role="button" data-bs-toggle="dropdown">
+                <img src="/assets/foto-usuario.png" class="rounded-circle border object-fit-cover" style="width: 35px; height: 35px;" alt="Perfil">
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end shadow">
+                <li><a class="dropdown-item" href="#">Mi Perfil</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item text-danger" href="#">Cerrar Sesión</a></li>
+              </ul>
+            </div>
+
+          <div class="collapse navbar-collapse order-4 order-lg-2" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
+              <li class="nav-item mx-2">
+                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link active" aria-current="page" href="#" data-bs-toggle="modal" 
+                  data-bs-target="#exampleModal">Login</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link active" aria-current="page" href="/pages/contactos.html">Contacto</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link active" aria-current="page" href="/pages/about.html">Sobre nosotros</a>
+              </li>
+            </ul>
+              
+            <form class="d-flex ms-lg-3" role="search">
+              <input
+                class="form-control me-2 input-buscar"
+                type="search"
+                placeholder="Buscar"
+                aria-label="Search"
+              />
+              <button class="btn btn-buscar" type="submit">
+                Buscar
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main>
+
+        <!--Página principal -->
+        <!--Alexis -->
+
+        <!--Aqui va:
+            -Stream destacado
+            -Reproductor
+            -Link al OBS
+            -Secciones en vivo
+            -Cards de streams
+        -->
+
+
+        <!-- Categorias -->
+        <!-- Alexis -->
+
+        <!-- Aqui van:
+            -Lista de streamers
+            -Categorias
+            -Juegos
+            -Filtros
+        -->
+      <!-- BANNER DE PROMO -->
+      <div class="alert banner-promo mb-0 rounded-0 border-0 py-2 text-center">
+        <div class="container-fluid fs-6">
+            <strong>¡PROMO MAYO!</strong> 50% OFF tus primeros 12 meses con el código: <strong>GOL2026</strong>
+            <a href="pages/404.html" class="text-white ms-3 fw-bold text-decoration-underline">¡Aprovechar ahora!</a>
+        </div>
+      </div>
+      <!-- CAROUSEL PRINCIPAL -->
+      <section id="hero">
+          <div id="principal-carousel" class="carousel slide" data-bs-ride="carousel"data-bs-interval="4000">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#principal-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#principal-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#principal-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <a href="pages/detalles.html" class="text-decoration-none">
+                  <img src="./assets/WastedInicial.png" class="d-block w-100" alt="Serie Wasted">
+                  <div class="carousel-caption fs-6">
+                    <h5>Wasted</h5>
+                  </div>
+                </a>
+              </div>
+              <div class="carousel-item">
+                <a href="pages/detalles.html" class="text-decoration-none">
+                  <img src="./assets/AlejoYValentina.png" class="d-block w-100" alt="Serie Alejo y Valentina">
+                  <div class="carousel-caption fs-6">
+                    <h5>Alejo y Valentina</h5>
+                  </div>
+                </a>  
+              </div>
+              <div class="carousel-item">
+                <a href="pages/detalles.html" class="text-decoration-none">
+                  <img src="./assets/TresAcordes.png" class="d-block w-100" alt="Serie Tres Acordes">
+                  <div class="carousel-caption fs-6">
+                    <h5>Tres Acordes</h5>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#principal-carousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#principal-carousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+      </section>
+      <!-- SECCION CATEGORIAS -->
+      <section id="categorias">
+        <div class="row justify-content-center g-3 my-1">
+          <div class="col-6 col-md-4">
+            <div class="card principal-categorias-card">
+              <h6 class="card-title text-center m-0 fs-4">CATEGORIAS</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="d-flex flex-nowrap overflow-x-auto gap-3 py-3 m-0 col-lg-7 mx-auto" style="scroll-behavior: smooth;">
+    
+          <div class="flex-shrink-0 principal-top10-card">
+            <a href="pages/categorias.html" class="text-decoration-none">
+              <div class="card bg-dark text-white p-2">
+                <img src="https://media.themoviedb.org/t/p/w220_and_h330_face/8ehYxUh5MWE41AeE9gkHE8DKzvB.jpg" class="card-img-top" alt="Categoria accion">
+                  <div class="position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center" 
+                      style="background: rgba(0, 0, 0, 0.5);">
+                      
+                      <h5 class="m-0 text-uppercase fw-bold tracking-wide text-center" 
+                          style="letter-spacing: 2px; text-shadow: 2px 2px 4px rgba(0,0,0,0.8);">
+                          Acción
+                      </h5>
+                      
+                  </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="flex-shrink-0 principal-top10-card">
+            <a href="pages/categorias.html" class="text-decoration-none">
+              <div class="card bg-dark text-white p-2">
+                <img src="https://media.themoviedb.org/t/p/w130_and_h195_face/jj7AYkz2OLRDL1wfJmjTXyWQ5I4.jpg" class="card-img-top" alt="categoria comedia">
+                  <div class="position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center" 
+                      style="background: rgba(0, 0, 0, 0.5);">
+                      
+                      <h5 class="m-0 text-uppercase fw-bold tracking-wide text-center" 
+                          style="letter-spacing: 2px; text-shadow: 2px 2px 4px rgba(0,0,0,0.8);">
+                          COMEDIA
+                      </h5>
+                  </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="flex-shrink-0 principal-top10-card">
+            <a href="pages/categorias.html" class="text-decoration-none">
+            <div class="card bg-dark text-white p-2">
+              <img src="https://media.themoviedb.org/t/p/w130_and_h195_face/oscW8xV8EhRYj7iAhyVlBohKqxo.jpg" class="card-img-top" alt="categoria romance">
+                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center" 
+                    style="background: rgba(0, 0, 0, 0.5);">
+                    
+                    <h5 class="m-0 text-uppercase fw-bold tracking-wide text-center" 
+                        style="letter-spacing: 2px; text-shadow: 2px 2px 4px rgba(0,0,0,0.8);">
+                        ROMANCE
+                    </h5>
+                </div>
+            </div>
+            </a>
+          </div>
+
+          <div class="flex-shrink-0 principal-top10-card">
+            <a href="pages/categorias.html" class="text-decoration-none">
+            <div class="card bg-dark text-white p-2">
+              <img src="https://media.themoviedb.org/t/p/w130_and_h195_face/uqx37cS8cpHg8U35f9U5IBlrCV3.jpg" class="card-img-top" alt="categoria guerra">
+                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center" 
+                    style="background: rgba(0, 0, 0, 0.5);">
+                    
+                    <h5 class="m-0 text-uppercase fw-bold tracking-wide text-center" 
+                        style="letter-spacing: 2px; text-shadow: 2px 2px 4px rgba(0,0,0,0.8);">
+                        GUERRA
+                    </h5>
+                </div>
+            </div>
+            </a>
+          </div>
+
+          <div class="flex-shrink-0 principal-top10-card">
+            <a href="pages/categorias.html" class="text-decoration-none">
+            <div class="card bg-dark text-white p-2">
+              <img src="https://media.themoviedb.org/t/p/w130_and_h195_face/ode14q7WtDugFDp78fo9lCsmay9.jpg" class="card-img-top" alt="categoria ciencia ficcion">
+                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center" 
+                    style="background: rgba(0, 0, 0, 0.5);">
+                    
+                    <h5 class="m-0 text-uppercase fw-bold tracking-wide text-center" 
+                        style="letter-spacing: 2px; text-shadow: 2px 2px 4px rgba(0,0,0,0.8);">
+                        CIENCIA FICCIÓN
+                    </h5>
+                </div>
+            </div>
+            </a>
+          </div>
+
+          <div class="flex-shrink-0 principal-top10-card">
+            <a href="pages/categorias.html" class="text-decoration-none">
+            <div class="card bg-dark text-white p-2">
+              <img src="https://media.themoviedb.org/t/p/w130_and_h195_face/vQWk5YBFWF4bZaofAbv0tShwBvQ.jpg" class="card-img-top" alt="categoria crimen">
+                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center" 
+                    style="background: rgba(0, 0, 0, 0.5);">
+                    
+                    <h5 class="m-0 text-uppercase fw-bold tracking-wide text-center" 
+                        style="letter-spacing: 2px; text-shadow: 2px 2px 4px rgba(0,0,0,0.8);">
+                        CRIMEN
+                    </h5>
+                </div>
+            </div>
+            </a>
+          </div>
+
+          <div class="flex-shrink-0 principal-top10-card">
+            <a href="pages/categorias.html" class="text-decoration-none">
+            <div class="card bg-dark text-white p-2">
+              <img src="https://media.themoviedb.org/t/p/w130_and_h195_face/1g0dhYtq4irTY1GPXvft6k4YLjm.jpg" class="card-img-top" alt="categoria aventura">
+                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center" 
+                    style="background: rgba(0, 0, 0, 0.5);">
+                    
+                    <h5 class="m-0 text-uppercase fw-bold tracking-wide text-center" 
+                        style="letter-spacing: 2px; text-shadow: 2px 2px 4px rgba(0,0,0,0.8);">
+                        AVENTURA
+                    </h5>
+                </div>
+            </div>
+            </a>
+          </div>
+
+        </div>
+      </section>
+      
+<!-- PELICULAS TOP 10 en proceso...-->
+      <section id="top-peliculas" class="my-1">
+        <div class="row justify-content-center g-3 my-1">
+          <div class="col-6 col-md-4">
+            <div class="card principal-categorias-card">
+              <h6 class="card-title text-center m-0 fs-4">TOP 10</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="d-flex flex-nowrap overflow-x-auto gap-3 py-3 m-0 col-lg-7 mx-auto" style="scroll-behavior: smooth;">
+    
+          <div class="flex-shrink-0 principal-top10-card">
+            <a href="pages/detalles.html" class="text-decoration-none">
+              <div class="card bg-dark text-white p-2">
+                <img src="https://media.themoviedb.org/t/p/w130_and_h195_face/uqx37cS8cpHg8U35f9U5IBlrCV3.jpg" class="card-img-top" alt="Pelicula 1">
+              </div>
+            </a>
+          </div>
+
+          <div class="flex-shrink-0 principal-top10-card">
+            <a href="pages/detalles.html" class="text-decoration-none">
+              <div class="card bg-dark text-white p-2">
+                <img src="https://media.themoviedb.org/t/p/w130_and_h195_face/jj7AYkz2OLRDL1wfJmjTXyWQ5I4.jpg" class="card-img-top" alt="Pelicula 2">
+              </div>
+            </a>
+          </div>
+
+          <div class="flex-shrink-0 principal-top10-card">
+            <a href="pages/detalles.html" class="text-decoration-none">
+              <div class="card bg-dark text-white p-2">
+                <img src="https://media.themoviedb.org/t/p/w130_and_h195_face/1g0dhYtq4irTY1GPXvft6k4YLjm.jpg" class="card-img-top" alt="Pelicula 3">
+              </div>
+            </a>
+          </div>
+
+          <div class="flex-shrink-0 principal-top10-card">
+            <a href="pages/detalles.html" class="text-decoration-none">
+            <div class="card bg-dark text-white p-2">
+              <img src="https://media.themoviedb.org/t/p/w130_and_h195_face/vQWk5YBFWF4bZaofAbv0tShwBvQ.jpg" class="card-img-top" alt="Pelicula 4">
+            </div>
+            </a>
+          </div>
+
+          <div class="flex-shrink-0 principal-top10-card">
+            <a href="pages/detalles.html" class="text-decoration-none">
+            <div class="card bg-dark text-white p-2">
+              <img src="https://media.themoviedb.org/t/p/w220_and_h330_face/8ehYxUh5MWE41AeE9gkHE8DKzvB.jpg" class="card-img-top" alt="Pelicula 5">
+            </div>
+            </a>
+          </div>
+
+          <div class="flex-shrink-0 principal-top10-card">
+            <a href="pages/detalles.html" class="text-decoration-none">
+            <div class="card bg-dark text-white p-2">
+              <img src="https://media.themoviedb.org/t/p/w130_and_h195_face/ode14q7WtDugFDp78fo9lCsmay9.jpg" class="card-img-top" alt="Pelicula 6">
+            </div>
+            </a>
+          </div>
+
+          <div class="flex-shrink-0 principal-top10-card">
+            <a href="pages/detalles.html" class="text-decoration-none">
+            <div class="card bg-dark text-white p-2">
+              <img src="https://media.themoviedb.org/t/p/w130_and_h195_face/oscW8xV8EhRYj7iAhyVlBohKqxo.jpg" class="card-img-top" alt="Pelicula 7">
+            </div>
+            </a>
+          </div>
+
+        </div>
+      </section>
+
+
+        <!--login -->
+        <!--Facu -->
+
+        <!-- Modal login:
+            -Email
+            -Password
+            -Boton entrar
+            -Link a registro
+        -->
+
+        <!-- Facu -->
+        <!-- Login modal-->
+
+<div 
+class="modal fade" 
+id="exampleModal" 
+tabindex="-1" 
+aria-labelledby="exampleModalLabel" 
+aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content fr-modal-contenedor">
+<div class="modal-header fr-modal-encabezado">
+<h1 
+class="modal-title fs-5 fr-modal-titulo" 
+id="exampleModalLabel">Inicio de sesión
+</h1>
+<button 
+type="button" 
+class="btn-close fr-modal-cerrar" 
+data-bs-dismiss="modal" 
+aria-label="Close">
+</button>
+</div>
+<div class="modal-body">
+<form>
+<div class="mb-3">
+<label 
+for="exampleInputEmail1" 
+class="form-label fr-modal-etiqueta">Correo electrónico
+</label>
+<input 
+type="email" 
+class="form-control fr-modal-campo" 
+id="exampleInputEmail1"
+required>
+</div>
+<div class="mb-3">
+<label 
+for="exampleInputPassword1" 
+class="form-label fr-modal-etiqueta">Contraseña
+</label>
+<input 
+type="password" 
+class="form-control fr-modal-campo" 
+id="exampleInputPassword1"
+required>
+</div>
+<div class="mb-3 form-check">
+<input 
+type="checkbox" 
+class="form-check-input fr-modal-casilla" 
+id="exampleCheck1">
+<label 
+class="form-check-label fr-modal-casilla-texto" 
+for="exampleCheck1">Mantener sesión iniciada
+</label>
+</div>
+</div>
+<div class="modal-footer fr-modal-pie">
+<button 
+type="submit" 
+class="btn btn-primary fr-modal-boton-principal">Iniciar
+</button>
+<a href="../pages/pageregister.html" class="btn btn-outline-purple fr-modal-boton-registro">Registrarse</a>
+<button 
+type="button" 
+class="btn btn-secondary fr-modal-boton-secundario" 
+data-bs-dismiss="modal">Cancelar
+</button>
+</form>
+</div>
+</div>
+</div>
+</div>
+        <!--Pagina aparte register:
+            -Username
+            -Email
+            -Contraseña
+            -Confirmar contraseña
+            -Botón registrarse
+        Facu-->
+
+        <!-- Boton sub y donaciones -->
+        <!-- Grupo -->
+
+        <!-- Aqui va:
+            - Boton suscribirse
+            - Boton donar
+            - Alertas o modal
+        -->
+
+
+        <!-- Error 404 -->
+        <!-- Grupo -->
+
+        <!-- Acá va:
+            - Mensaje de error
+            - Boton volver al inicio
+            - Navbar simple
+        -->
+
+    </main>
+    
+
+
+
+        <!-- Footer -->
+        <!-- Guillermo -->
+        <!-- Aqui va:
+            - Redes
+            - Logo
+            - CopyR 
+            - Contacto
+        -->
+
+        <!-- Contacto -->
+        <!-- Jose -->
+
+        <!-- Aqui van:
+            -Info del grupo
+            -Que es la pagina
+            -Redes/contacto
+        -->
+
+
+<footer>
+
+        <div class="footer-container">
+
+            <div class="footer-logo">
+                <h1>NEXORA</h1>
+                <p>Tu plataforma favorita para ver películas y series.</p>
+            </div>
+
+            <div class="footer-social">
+    <h3>Redes Sociales</h3>
+
+    <a href="pages/404.html">Instagram</a>
+    <a href="pages/404.html">Facebook</a>
+    <a href="pages/404.html">Twitter</a>
+</div>
+
+            <div class="footer-links">
+                <h3>Links</h3>
+
+                <a href="/pages/about.html">Acerca de Nosotros</a>
+                <a href="/pages/contactos.html">Contacto</a>
+            </div>
+
+        </div>
+
+        <div class="footer-copy">
+            © 2026 Nexora - Todos los derechos reservados
+        </div>
+
+    </footer>
+    <!-- Bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
