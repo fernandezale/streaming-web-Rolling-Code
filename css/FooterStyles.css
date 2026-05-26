@@ -36,11 +36,12 @@ body{
 
         .footer-container{
             display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
+            justify-content: center;
+            align-items: center;
             flex-wrap: wrap;
-            gap: 40px;
-        }
+             gap: 40px;
+             text-align: center;
+}
 
         .footer-logo h1{
             color: #ff5e00;
