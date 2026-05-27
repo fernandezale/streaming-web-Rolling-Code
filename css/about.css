@@ -58,11 +58,12 @@ transition: 2.5s;
     gap: 15px;
 }
 .team{ text-align: center;}
- .card{
+
+.card{
+    background-color: black;
     overflow: hidden;
     border-radius: 15px;
-border: solid #8400ff 3px;
-    
+    border: solid #8400ff 3px;    
  }
  /*///////////// ANIMACION A LAS CARDS /////////// */
 .card img{
@@ -81,7 +82,7 @@ border: solid #8400ff 3px;
 
 .card p{
     text-align: center;
-    color: rgb(150, 150, 145);
+    color:white;
 }
  /*/////////////// MEDIA QUERIS ///////////////// */
 @media (min-width: 768px){

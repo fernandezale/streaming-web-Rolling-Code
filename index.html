@@ -11,10 +11,6 @@
     <link rel="stylesheet" href="css/PrincipalPageStyles.css">
     <link rel="stylesheet" href="/css/fr-login.css">
     <link rel="stylesheet" href="/css/FooterStyles.css">
-    <link rel="shortcut icon" href="/assets/favicon-32x32.png" type="image/png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&family=VT323&display=swap" rel="stylesheet">
 </head>
 
 <body style="background-color: var(--dark--gray);">
@@ -169,7 +165,7 @@
           </div>
       </section>
       <!-- SECCION CATEGORIAS -->
-      <section id="categorias" class="overflow-hidden">
+      <section id="categorias">
         <div class="row justify-content-center g-3 my-1">
           <div class="col-6 col-md-4">
             <div class="card principal-categorias-card">
@@ -297,7 +293,7 @@
       </section>
       
 <!-- PELICULAS TOP 10 en proceso...-->
-      <section id="top-peliculas" class="overflow-hidden my-1">
+      <section id="top-peliculas" class="my-1">
         <div class="row justify-content-center g-3 my-1">
           <div class="col-6 col-md-4">
             <div class="card principal-categorias-card">
@@ -378,91 +374,79 @@
             -Link a registro
         -->
 
-<div class="modal fade" 
-  id="exampleModal" 
-  tabindex="-1" 
-  aria-labelledby="exampleModalLabel" 
-  aria-hidden="true">
+        <!-- Facu -->
+        <!-- Login modal-->
 
-  <div class="modal-dialog">
-    <div class="modal-content fr-modal-contenedor">
-
-      <div class="modal-header fr-modal-encabezado">
-        <h1 class="modal-title fs-5 fr-modal-titulo" 
-          id="exampleModalLabel">
-          Inicio de sesión
-        </h1>
-
-        <button type="button" 
-          class="btn-close fr-modal-cerrar" 
-          data-bs-dismiss="modal" 
-          aria-label="Close">
-        </button>
-      </div>
-
-      <div class="modal-body">
-        <form>
-
-          <div class="mb-3">
-            <label for="exampleInputEmail1" 
-              class="form-label fr-modal-etiqueta">
-              Correo electrónico
-            </label>
-
-            <input type="email" 
-              class="form-control fr-modal-campo" 
-              id="exampleInputEmail1"
-              required>
-          </div>
-
-          <div class="mb-3">
-            <label for="exampleInputPassword1" 
-              class="form-label fr-modal-etiqueta">
-              Contraseña
-            </label>
-
-            <input type="password" 
-              class="form-control fr-modal-campo" 
-              id="exampleInputPassword1"
-              required>
-          </div>
-
-          <div class="mb-3 form-check">
-            <input type="checkbox" 
-              class="form-check-input fr-modal-casilla" 
-              id="exampleCheck1">
-
-            <label class="form-check-label fr-modal-casilla-texto" 
-              for="exampleCheck1">
-              Mantener sesión iniciada
-            </label>
-          </div>
-
-      </div>
-
-      <div class="modal-footer fr-modal-pie">
-
-        <button type="submit" 
-          class="btn btn-primary fr-modal-boton-principal">
-          Iniciar
-        </button>
-
-        <a href="../pages/pageregister.html" 
-          class="btn btn-outline-purple fr-modal-boton-registro">
-          Registrarse
-        </a>
-
-        <button type="button" 
-          class="btn btn-secondary fr-modal-boton-secundario" 
-          data-bs-dismiss="modal">
-          Cancelar
-        </button>
-
-        </form>
-
-      </div>
-    </div>
-  </div>
+<div 
+class="modal fade" 
+id="exampleModal" 
+tabindex="-1" 
+aria-labelledby="exampleModalLabel" 
+aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content fr-modal-contenedor">
+<div class="modal-header fr-modal-encabezado">
+<h1 
+class="modal-title fs-5 fr-modal-titulo" 
+id="exampleModalLabel">Inicio de sesión
+</h1>
+<button 
+type="button" 
+class="btn-close fr-modal-cerrar" 
+data-bs-dismiss="modal" 
+aria-label="Close">
+</button>
+</div>
+<div class="modal-body">
+<form>
+<div class="mb-3">
+<label 
+for="exampleInputEmail1" 
+class="form-label fr-modal-etiqueta">Correo electrónico
+</label>
+<input 
+type="email" 
+class="form-control fr-modal-campo" 
+id="exampleInputEmail1"
+required>
+</div>
+<div class="mb-3">
+<label 
+for="exampleInputPassword1" 
+class="form-label fr-modal-etiqueta">Contraseña
+</label>
+<input 
+type="password" 
+class="form-control fr-modal-campo" 
+id="exampleInputPassword1"
+required>
+</div>
+<div class="mb-3 form-check">
+<input 
+type="checkbox" 
+class="form-check-input fr-modal-casilla" 
+id="exampleCheck1">
+<label 
+class="form-check-label fr-modal-casilla-texto" 
+for="exampleCheck1">Mantener sesión iniciada
+</label>
+</div>
+</div>
+<div class="modal-footer fr-modal-pie">
+<button 
+type="submit" 
+class="btn btn-primary fr-modal-boton-principal">Iniciar
+</button>
+<a href="../pages/pageregister.html" class="btn btn-outline-purple fr-modal-boton-registro">Registrarse</a>
+<button 
+type="button" 
+class="btn btn-secondary fr-modal-boton-secundario" 
+data-bs-dismiss="modal">Cancelar
+</button>
+</form>
+</div>
+</div>
+</div>
 </div>
         <!--Pagina aparte register:
             -Username
@@ -518,9 +502,9 @@
 <footer>
 
         <div class="footer-container">
-          <a href="">
+
             <div class="footer-logo">
-                <h1>NEXORA</h1> </a>
+                <h1>NEXORA</h1>
                 <p>Tu plataforma favorita para ver películas y series.</p>
             </div>
 
