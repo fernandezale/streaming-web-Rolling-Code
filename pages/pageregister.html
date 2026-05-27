@@ -7,8 +7,67 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/global.css">
     <link rel="stylesheet" href="../css/fr-register.css">
+    <link rel="stylesheet" href="/css/FooterStyles.css">
 </head>
 <body>
+    <nav class="navbar navbar-dark navbar-expand-lg mi-nav">
+            <div class="container-fluid d-flex justify-content-between align-items-center">
+
+          <button
+            class="navbar-toggler order-1"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <a class="navbar-brand order-2 mx-auto" href="/index.html"><img class="logo" src="/assets/logo.png" alt=""></a>
+
+            <div class="nav-item dropdown order-3 ms-lg-4">
+              <a class="nav-link dropdown-toggle p-0" href="#" role="button" data-bs-toggle="dropdown">
+                <img src="/assets/foto-usuario.png" class="rounded-circle border object-fit-cover" style="width: 35px; height: 35px;" alt="Perfil">
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end shadow">
+                <li><a class="dropdown-item" href="/pages/404.html">Mi Perfil</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item text-danger" href="/pages/404.html">Cerrar Sesión</a></li>
+              </ul>
+            </div>
+
+          <div class="collapse navbar-collapse order-4 order-lg-2" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
+              <li class="nav-item mx-2">
+                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link active" aria-current="page" href="#" data-bs-toggle="modal" 
+                  data-bs-target="#exampleModal">Login</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link active" aria-current="page" href="/pages/contactos.html">Contacto</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link active" aria-current="page" href="/pages/about.html">Sobre nosotros</a>
+              </li>
+            </ul>
+              
+            <form class="d-flex ms-lg-3" role="search">
+              <input
+                class="form-control me-2 input-buscar"
+                type="search"
+                placeholder="Buscar"
+                aria-label="Search"
+              />
+              <button class="btn btn-buscar" type="submit">
+                Buscar
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
     <main class="container py-5">
         <header class="text-center mb-5">
             <h1 class="fr-texto-naranja fw-bold display-5">Elegí tu plan y empezá a mirar</h1>
@@ -89,6 +148,37 @@
             </form>
         </section>
     </main>
+    <footer>
+
+        <div class="footer-container">
+
+            <div class="footer-logo">
+                <h1>NEXORA</h1>
+                <p>Tu plataforma favorita para ver películas y series.</p>
+            </div>
+
+            <div class="footer-social">
+    <h3>Redes Sociales</h3>
+
+    <a href="pages/404.html">Instagram</a>
+    <a href="pages/404.html">Facebook</a>
+    <a href="pages/404.html">Twitter</a>
+</div>
+
+            <div class="footer-links">
+                <h3>Links</h3>
+
+                <a href="/pages/about.html">Acerca de Nosotros</a>
+                <a href="/pages/contactos.html">Contacto</a>
+            </div>
+
+        </div>
+
+        <div class="footer-copy">
+            © 2026 Nexora - Todos los derechos reservados
+        </div>
+
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
