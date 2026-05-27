@@ -23,11 +23,6 @@ body{
 }
 
 
-
-
-
-
-
  footer{
             border-top: 2px solid #ff5e00;
             background: #111;
@@ -36,11 +31,12 @@ body{
 
         .footer-container{
             display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
+            justify-content: center;
+            align-items: center;
             flex-wrap: wrap;
-            gap: 40px;
-        }
+             gap: 40px;
+             text-align: center;
+}
 
         .footer-logo h1{
             color: #ff5e00;

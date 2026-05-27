@@ -20,6 +20,9 @@ body{
    color: rgba(238, 137, 5, 0.918);
    margin-bottom: 10px;
 }
+.consulta p{
+    color: white;
+}
  
 .conte_principal{ 
     display: grid;
