@@ -114,8 +114,7 @@ body {
 }
 
 .play-icon {
-  color: var(--orange);
-  font-size: .8rem;
+  font-size: .9rem;
 }
 
 .card-body {
